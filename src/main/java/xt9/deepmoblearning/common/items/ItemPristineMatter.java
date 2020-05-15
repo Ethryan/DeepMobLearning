@@ -115,9 +115,21 @@ public class ItemPristineMatter extends ItemBase {
         }
     }
 
-    public static class TE extends ItemPristineMatter {
-        public TE() {
-            super("pristine_matter_thermal_elemental", MobKey.TE);
+    public static class TEBlizz extends ItemPristineMatter {
+        public TEBlizz() {
+            super("pristine_matter_thermal_blizz", MobKey.BLIZZ);
+        }
+    }
+	
+    public static class TEBlitz extends ItemPristineMatter {
+        public TEBlitz() {
+            super("pristine_matter_thermal_blitz", MobKey.BLITZ);
+        }
+    }
+
+    public static class TEBasalz extends ItemPristineMatter {
+        public TEBasalz() {
+            super("pristine_matter_thermal_basalz", MobKey.BASALZ);
         }
     }
 

@@ -184,12 +184,57 @@ public class MobMetaFactory {
 
 
         // External mods
-        if(DeepConstants.MOD_TE_LOADED && key.equals(MobKey.TE)) {
-            meta = new ThermalElementalMeta(MobKey.TE, "Thermal Elementals", "Elementals", 10, 48, 10, 20, Registry.livingMatterOverworldian, Registry.pristineMatterTE);
-        }
-
+        if(DeepConstants.MOD_TE_LOADED) {
+			if(key.equals(MobKey.BLIZZ)) {
+				meta = new ThermalBlizzMeta(
+					MobKey.BLIZZ, 
+					"Thermal Blizz", 
+					"Elementals", 
+					10, 
+					48, 
+					10, 
+					20, 
+					Registry.livingMatterOverworldian, 
+					Registry.pristineMatterTEBlizz
+				);
+			} else if(key.equals(MobKey.BLITZ)) {
+				meta = new ThermalBlitzMeta(
+					MobKey.BLITZ, "Thermal Blitz", 
+					"Elementals", 
+					10, 
+					48, 
+					10, 
+					20, 
+					Registry.livingMatterOverworldian, 
+					Registry.pristineMatterTEBlitz
+				);
+            } else if(key.equals(MobKey.BASALZ)) {
+				meta = new ThermalBasalzMeta(
+					MobKey.BASALZ, 
+					"Thermal Basalz", 
+					"Elementals", 
+					10, 
+					48, 
+					10, 
+					20, 
+					Registry.livingMatterOverworldian, 
+					Registry.pristineMatterTEBasalz
+				);
+			}
+		}
+		
         if(DeepConstants.MOD_TCON_LOADED && key.equals(MobKey.TINKERSLIME)) {
-            meta = new TinkerSlimeMeta(MobKey.TINKERSLIME, "Blue slime", "Blue slimes", 8, 60, 10, -16, Registry.livingMatterOverworldian, Registry.pristineMatterTinkerSlime);
+            meta = new TinkerSlimeMeta(
+				MobKey.TINKERSLIME, 
+				"Blue slime", 
+				"Blue slimes", 
+				8, 
+				60, 
+				10, 
+				-16, 
+				Registry.livingMatterOverworldian, 
+				Registry.pristineMatterTinkerSlime
+			);
         }
 
         if(DeepConstants.MOD_TWILIGHT_LOADED) {
@@ -203,7 +248,8 @@ public class MobMetaFactory {
                     6,
                     12,
                     Registry.livingMatterTwilight,
-                    Registry.pristineMatterTwilightForest);
+                    Registry.pristineMatterTwilightForest
+				);
             } else if(key.equals(MobKey.TWILIGHTSWAMP)) {
                 meta = new TwilightSwampMeta(
                     MobKey.TWILIGHTSWAMP,
@@ -244,7 +290,17 @@ public class MobMetaFactory {
         }
 
         if(key.equals(MobKey.MO_ANDROID)) {
-            meta = new MOAndroidMeta(MobKey.MO_ANDROID, "Rogue Android", "Rogue Androids", 0, 33, 4, 8, Registry.livingMatterOverworldian, Registry.pristineMatterMOAndroid);
+            meta = new MOAndroidMeta(
+				MobKey.MO_ANDROID, 
+				"Rogue Android", 
+				"Rogue Androids", 
+				0, 
+				33, 
+				4, 
+				8, 
+				Registry.livingMatterOverworldian, 
+				Registry.pristineMatterMOAndroid
+			);
         }
 
         return meta;

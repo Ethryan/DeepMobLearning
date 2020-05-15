@@ -47,7 +47,7 @@ public class DeepConstants {
 
         public static final String[] BLAZE = {
             "minecraft:blaze_rod,22,0",
-            "thermalfoundation:material,32,771",
+            "thermalfoundation:material,32,771"
         };
 
         public static final String[] DRAGON = {
@@ -81,26 +81,32 @@ public class DeepConstants {
         public static final String[] SKELETON = {
             "minecraft:bone,64,0",
             "minecraft:arrow,64,0",
-            "minecraft:skull,6,0",
+            "minecraft:skull,6,0"
         };
 
         public static final String[] SLIME = {
-            "minecraft:slime_ball,32,0",
+            "minecraft:slime_ball,32,0"
         };
 
         public static final String[] SPIDER = {
             "minecraft:spider_eye,16,0",
             "minecraft:string,64,0",
-            "minecraft:web,8,0",
+            "minecraft:web,8,0"
         };
 
-        public static final String[] THERMALELEMENTAL = {
-            "thermalfoundation:material,16,772",
-            "thermalfoundation:material,16,770",
+        public static final String[] THERMALBLIZZ = {
             "minecraft:snowball,16,0",
-            "thermalfoundation:material,8,2050",
-            "thermalfoundation:material,8,2052",
             "thermalfoundation:material,8,2048"
+        };
+		
+        public static final String[] THERMALBLITZ = {
+            "thermalfoundation:material,16,772",
+            "thermalfoundation:material,8,2050"
+        };
+		
+        public static final String[] THERMALBASALZ = {
+            "thermalfoundation:material,16,770",
+            "thermalfoundation:material,8,2052"
         };
 
         public static final String[] TINKERSLIME = {
@@ -109,7 +115,7 @@ public class DeepConstants {
             "tconstruct:edible,18,4",
             "tconstruct:slime_sapling,4,0",
             "tconstruct:slime_sapling,4,1",
-            "tconstruct:slime_sapling,4,2",
+            "tconstruct:slime_sapling,4,2"
         };
 
         public static final String[] TWILIGHTFOREST = {
@@ -117,7 +123,7 @@ public class DeepConstants {
             "twilightforest:charm_of_life_1,2,0",
             "twilightforest:charm_of_keeping_1,2,0",
             "minecraft:paper,64,0",
-            "minecraft:book,32,0",
+            "minecraft:book,32,0"
         };
 
         public static final String[] TWILIGHTSWAMP = {
@@ -144,13 +150,13 @@ public class DeepConstants {
             "minecraft:packed_ice,16,0",
             "minecraft:feather,32,0",
             "twilightforest:charm_of_life_2,1,0",
-            "twilightforest:charm_of_keeping_2,1,0",
+            "twilightforest:charm_of_keeping_2,1,0"
         };
 
         public static final String[] WITCH = {
             "minecraft:redstone,32,0",
             "minecraft:glowstone_dust,32,0",
-            "minecraft:sugar,64,0",
+            "minecraft:sugar,64,0"
         };
 
         public static final String[] WITHERSKELETON = {
@@ -159,7 +165,7 @@ public class DeepConstants {
         };
 
         public static final String[] WITHER = {
-            "minecraft:nether_star,3,0",
+            "minecraft:nether_star,3,0"
         };
 
         public static final String[] ZOMBIE = {
@@ -241,7 +247,7 @@ public class DeepConstants {
         public static final String[] SLIME = {
                 "minecraft:slime",
                 "minecraft:magma_cube",
-                "deepmoblearning:trial_slime",
+                "deepmoblearning:trial_slime"
         };
 
         public static final String[] SPIDER = {
@@ -250,13 +256,19 @@ public class DeepConstants {
                 "twilightforest:hedge_spider",
                 "twilightforest:king_spider",
                 "deepmoblearning:trial_spider",
-                "deepmoblearning:trial_cave_spider",
+                "deepmoblearning:trial_cave_spider"
         };
 
-        public static final String[] THERMALELEMENTAL = {
-                "thermalfoundation:blizz",
-                "thermalfoundation:blitz",
-                "thermalfoundation:basalz",
+        public static final String[] THERMALBLIZZ = {
+                "thermalfoundation:blizz"
+        };
+		
+        public static final String[] THERMALBLITZ = {
+                "thermalfoundation:blitz"
+        };
+		
+        public static final String[] THERMALBASALZ = {
+                "thermalfoundation:basalz"
         };
 
         public static final String[] TINKERSLIME = {
@@ -268,7 +280,7 @@ public class DeepConstants {
                 "twilightforest:lich_minion",
                 "twilightforest:lich",
                 "twilightforest:death_tome",
-                "twilightforest:swarm_spider",
+                "twilightforest:swarm_spider"
         };
 
         public static final String[] TWILIGHTSWAMP = {
@@ -278,7 +290,7 @@ public class DeepConstants {
                 "twilightforest:fire_beetle",
                 "twilightforest:pinch_beetle",
                 "twilightforest:slime_beetle",
-                "twilightforest:hydra",
+                "twilightforest:hydra"
         };
 
         public static final String[] TWILIGHTDARKWOOD = {
@@ -294,7 +306,7 @@ public class DeepConstants {
                 "twilightforest:tower_golem",
                 "twilightforest:tower_termite",
                 "twilightforest:mini_ghast",
-                "twilightforest:ur_ghast",
+                "twilightforest:ur_ghast"
         };
 
         public static final String[] TWILIGHTGLACIER = {
@@ -305,7 +317,7 @@ public class DeepConstants {
                 "twilightforest:snow_guardian",
                 "twilightforest:stable_ice_core",
                 "twilightforest:unstable_ice_core",
-                "twilightforest:snow_queen",
+                "twilightforest:snow_queen"
         };
 
         public static final String[] WITCH = {
@@ -324,7 +336,7 @@ public class DeepConstants {
                 "minecraft:husk",
                 "minecraft:zombie",
                 "minecraft:zombie_villager",
-                "minecraft:zombie_pigman",
+                "minecraft:zombie_pigman"
         };
 
         public static final String[] SHULKER = {
@@ -333,7 +345,7 @@ public class DeepConstants {
 
         public static final String[] GUARDIAN = {
                 "minecraft:elder_guardian",
-                "minecraft:guardian",
+                "minecraft:guardian"
         };
     }
 }

@@ -205,9 +205,31 @@ public class ItemDataModel extends ItemBase {
 
     }
 
-    public static class TE extends ItemDataModel {
-        public TE() {
-            super("data_model_thermal_elemental", MobKey.TE);
+    public static class ThermalBlizz extends ItemDataModel {
+        public ThermalBlizz() {
+            super("data_model_thermal_blizz", MobKey.BLIZZ);
+        }
+
+        @SideOnly(Side.CLIENT)
+        public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+            super.addInformation(stack, worldIn, list, flagIn);
+        }
+    }
+
+    public static class ThermalBlitz extends ItemDataModel {
+        public ThermalBlitz() {
+            super("data_model_thermal_blitz", MobKey.BLITZ);
+        }
+
+        @SideOnly(Side.CLIENT)
+        public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+            super.addInformation(stack, worldIn, list, flagIn);
+        }
+    }
+
+    public static class ThermalBasalz extends ItemDataModel {
+        public ThermalBasalz() {
+            super("data_model_thermal_basalz", MobKey.BASALZ);
         }
 
         @SideOnly(Side.CLIENT)

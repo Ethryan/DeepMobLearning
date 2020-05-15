@@ -69,7 +69,9 @@ public class Registry {
     private static ItemDataModel.Dragon dataModelDragon = new ItemDataModel.Dragon();
     private static ItemDataModel.Shulker dataModelShulker = new ItemDataModel.Shulker();
     private static ItemDataModel.Guardian dataModelGuardian = new ItemDataModel.Guardian();
-    private static ItemDataModel.TE dataModelTE = new ItemDataModel.TE();
+    private static ItemDataModel.ThermalBlizz dataModelThermalBlizz = new ItemDataModel.ThermalBlizz();
+    private static ItemDataModel.ThermalBlitz dataModelThermalBlitz = new ItemDataModel.ThermalBlitz();
+    private static ItemDataModel.ThermalBasalz dataModelThermalBasalz = new ItemDataModel.ThermalBasalz();
     private static ItemDataModel.TwilightForest dataModelTwilightForest = new ItemDataModel.TwilightForest();
     private static ItemDataModel.TwilightSwamp dataModelTwilightSwamp = new ItemDataModel.TwilightSwamp();
     private static ItemDataModel.TwilightDarkwood dataModelTwilightDarkwood = new ItemDataModel.TwilightDarkwood();
@@ -98,7 +100,9 @@ public class Registry {
     public static ItemPristineMatter.Dragon pristineMatterDragon = new ItemPristineMatter.Dragon();
     public static ItemPristineMatter.Shulker pristineMatterShulker = new ItemPristineMatter.Shulker();
     public static ItemPristineMatter.Guardian pristineMatterGuardian = new ItemPristineMatter.Guardian();
-    public static ItemPristineMatter.TE pristineMatterTE = new ItemPristineMatter.TE();
+    public static ItemPristineMatter.TEBlizz pristineMatterTEBlizz = new ItemPristineMatter.TEBlizz();
+    public static ItemPristineMatter.TEBlitz pristineMatterTEBlitz = new ItemPristineMatter.TEBlitz();
+    public static ItemPristineMatter.TEBasalz pristineMatterTEBasalz = new ItemPristineMatter.TEBasalz();
     public static ItemPristineMatter.TwilightForest pristineMatterTwilightForest = new ItemPristineMatter.TwilightForest();
     public static ItemPristineMatter.TwilightSwamp pristineMatterTwilightSwamp = new ItemPristineMatter.TwilightSwamp();
     public static ItemPristineMatter.TwilightDarkwood pristineMatterTwilightDarkwood = new ItemPristineMatter.TwilightDarkwood();
@@ -124,7 +128,9 @@ public class Registry {
         dataModels.add(dataModelGuardian);
 
         if(DeepConstants.MOD_TE_LOADED) {
-            dataModels.add(dataModelTE);
+			dataModels.add(dataModelThermalBlizz);
+			dataModels.add(dataModelThermalBlitz);
+            dataModels.add(dataModelThermalBasalz);
         }
 
         if(DeepConstants.MOD_TWILIGHT_LOADED) {
@@ -171,7 +177,9 @@ public class Registry {
         pristineMatter.add(pristineMatterGuardian);
 
         if(DeepConstants.MOD_TE_LOADED) {
-            pristineMatter.add(pristineMatterTE);
+            pristineMatter.add(pristineMatterTEBlizz);
+            pristineMatter.add(pristineMatterTEBlitz);
+            pristineMatter.add(pristineMatterTEBasalz);
         }
         if(DeepConstants.MOD_TCON_LOADED) {
             pristineMatter.add(pristineMatterTinkerSlime);

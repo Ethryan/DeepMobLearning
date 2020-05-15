@@ -19,7 +19,9 @@ public class MobKey {
     public static final String WITHER = "wither";
     public static final String WITHERSKELETON = "witherskeleton";
     public static final String ZOMBIE = "zombie";
-    public static final String TE = "thermalelemental";
+    public static final String BLIZZ = "thermalblizz";
+	public static final String BLITZ = "thermalblitz";
+    public static final String BASALZ = "thermalbasalz";
     public static final String TWILIGHTFOREST = "twilightforest";
     public static final String TWILIGHTSWAMP = "twilightswamp";
     public static final String TWILIGHTDARKWOOD = "twilightdarkwood";

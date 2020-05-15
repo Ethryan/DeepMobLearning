@@ -97,8 +97,10 @@ public class Config {
 
         /* Extension models */
         if(DeepConstants.MOD_TE_LOADED) {
-            dataModel.put(MobKey.TE, config.get(dataModel.getName(), MobKey.TE, 256,null, 1, 256000));
-        }
+            dataModel.put(MobKey.BLIZZ, config.get(dataModel.getName(), MobKey.BLIZZ, 256,null, 1, 256000));
+            dataModel.put(MobKey.BLITZ, config.get(dataModel.getName(), MobKey.BLITZ, 256,null, 1, 256000));
+            dataModel.put(MobKey.BASALZ, config.get(dataModel.getName(), MobKey.BASALZ, 256,null, 1, 256000));			
+		}
         if(DeepConstants.MOD_TWILIGHT_LOADED) {
             dataModel.put(MobKey.TWILIGHTFOREST, config.get(dataModel.getName(), MobKey.TWILIGHTFOREST, 256,null, 1, 256000));
             dataModel.put(MobKey.TWILIGHTSWAMP, config.get(dataModel.getName(), MobKey.TWILIGHTSWAMP, 256,null, 1, 256000));
@@ -134,7 +136,9 @@ public class Config {
 
         /* Extension models */
         if(DeepConstants.MOD_TE_LOADED) {
-            dataModelMobNames.put(MobKey.TE, new Property(MobKey.TE, config.getStringList(MobKey.TE, dataModelMobNames.getName(), DeepConstants.MOBS.THERMALELEMENTAL, "Thermal Elemental"), Property.Type.STRING));
+            dataModelMobNames.put(MobKey.BLIZZ, new Property(MobKey.BLIZZ, config.getStringList(MobKey.BLIZZ, dataModelMobNames.getName(), DeepConstants.MOBS.THERMALBLIZZ, "Thermal Blizz"), Property.Type.STRING));
+            dataModelMobNames.put(MobKey.BLITZ, new Property(MobKey.BLITZ, config.getStringList(MobKey.BLITZ, dataModelMobNames.getName(), DeepConstants.MOBS.THERMALBLITZ, "Thermal Blitz"), Property.Type.STRING));
+            dataModelMobNames.put(MobKey.BASALZ, new Property(MobKey.BASALZ, config.getStringList(MobKey.BASALZ, dataModelMobNames.getName(), DeepConstants.MOBS.THERMALBASALZ, "Thermal Basalz"), Property.Type.STRING));
         }
         if(DeepConstants.MOD_TWILIGHT_LOADED) {
             dataModelMobNames.put(MobKey.TWILIGHTFOREST, new Property(MobKey.TWILIGHTFOREST, config.getStringList(MobKey.TWILIGHTFOREST, dataModelMobNames.getName(), DeepConstants.MOBS.TWILIGHTFOREST, "Twilight Forest(Biome, not the whole mod)"), Property.Type.STRING));
@@ -232,7 +236,9 @@ public class Config {
 
 
         if(DeepConstants.MOD_TE_LOADED) {
-            pristineOutputs.put(MobKey.TE, new Property(MobKey.TE, config.getStringList(MobKey.TE, pristineOutputs.getName(), DeepConstants.LOOT.THERMALELEMENTAL, "Thermal Elemental"), Property.Type.STRING));
+            pristineOutputs.put(MobKey.BLIZZ, new Property(MobKey.BLIZZ, config.getStringList(MobKey.BLIZZ, pristineOutputs.getName(), DeepConstants.LOOT.THERMALBLIZZ, "Thermal Blizz"), Property.Type.STRING));
+            pristineOutputs.put(MobKey.BLITZ, new Property(MobKey.BLITZ, config.getStringList(MobKey.BLITZ, pristineOutputs.getName(), DeepConstants.LOOT.THERMALBLITZ, "Thermal Blitz"), Property.Type.STRING));
+            pristineOutputs.put(MobKey.BASALZ, new Property(MobKey.BASALZ, config.getStringList(MobKey.BASALZ, pristineOutputs.getName(), DeepConstants.LOOT.THERMALBASALZ, "Thermal Basalz"), Property.Type.STRING));
         }
 
         if(DeepConstants.MOD_TCON_LOADED) {
