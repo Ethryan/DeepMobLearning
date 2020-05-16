@@ -133,6 +133,12 @@ public class Registry {
             dataModels.add(dataModelThermalBasalz);
         }
 
+        if(DeepConstants.MOD_BW_LOADED) {
+			dataModels.add();
+			dataModels.add();
+            dataModels.add();
+        }
+
         if(DeepConstants.MOD_TWILIGHT_LOADED) {
             dataModels.add(dataModelTwilightForest);
             dataModels.add(dataModelTwilightSwamp);

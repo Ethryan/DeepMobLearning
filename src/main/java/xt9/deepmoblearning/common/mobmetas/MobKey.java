@@ -22,6 +22,14 @@ public class MobKey {
     public static final String BLIZZ = "thermalblizz";
 	public static final String BLITZ = "thermalblitz";
     public static final String BASALZ = "thermalbasalz";
+	public static final String BWBOULDER = "bwboulder";
+	public static final String BWDRUIDS = "bwdruids";
+	public static final String BWANGLERFISH = "bwanglerfish";
+	public static final String BWCHIROMAW = "bwchiromaw";
+	public static final String BWSLUDGE = "bwsludge";
+	public static final String BWSLUDGEON = "bwsludgeon";
+	public static final String BWEMBERLING = "bwemberling";
+	public static final String BWSPIRITTREE = "bwspirittree";
     public static final String TWILIGHTFOREST = "twilightforest";
     public static final String TWILIGHTSWAMP = "twilightswamp";
     public static final String TWILIGHTDARKWOOD = "twilightdarkwood";

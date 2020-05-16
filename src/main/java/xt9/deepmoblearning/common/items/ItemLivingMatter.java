@@ -103,4 +103,26 @@ public class ItemLivingMatter extends ItemBase {
             super.addInformation(stack, worldIn, list, flagIn);
         }
     }
+
+    public static class Between extends ItemLivingMatter {
+        public Between() {
+            super("living_matter_between", "§2Between§r", "between");
+        }
+
+        @SideOnly(Side.CLIENT)
+        public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+            super.addInformation(stack, worldIn, list, flagIn);
+        }
+    }
+
+    public static class Spatial extends ItemLivingMatter {
+        public Spatial() {
+            super("living_matter_spatial", "§1Spatial§r", "spatial");
+        }
+
+        @SideOnly(Side.CLIENT)
+        public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+            super.addInformation(stack, worldIn, list, flagIn);
+        }
+    }
 }

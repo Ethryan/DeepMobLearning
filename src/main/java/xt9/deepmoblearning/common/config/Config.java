@@ -74,6 +74,10 @@ public class Config {
         if(DeepConstants.MOD_TWILIGHT_LOADED) {
             livingMatterEXP.put("twilight", config.get(livingMatterEXP.getName(), "twilight", 30, null, 1, 999));
         }
+		
+		if(DeepConstants.MOD_BW_LOADED) {
+            livingMatterEXP.put("between", config.get(livingMatterEXP.getName(), "between", 20, null, 1, 999));
+        }
     }
 
     private static void initDataModelRFCost() {
@@ -99,17 +103,31 @@ public class Config {
         if(DeepConstants.MOD_TE_LOADED) {
             dataModel.put(MobKey.BLIZZ, config.get(dataModel.getName(), MobKey.BLIZZ, 256,null, 1, 256000));
             dataModel.put(MobKey.BLITZ, config.get(dataModel.getName(), MobKey.BLITZ, 256,null, 1, 256000));
-            dataModel.put(MobKey.BASALZ, config.get(dataModel.getName(), MobKey.BASALZ, 256,null, 1, 256000));			
+            dataModel.put(MobKey.BASALZ, config.get(dataModel.getName(), MobKey.BASALZ, 256,null, 1, 256000));
 		}
+
+        if(DeepConstants.MOD_BW_LOADED) {
+            dataModel.put(MobKey.BWBOULDER, config.get(dataModel.getName(), MobKey.BWBOULDER, 256,null, 1, 256000));
+            dataModel.put(MobKey.BWDRUIDS, config.get(dataModel.getName(), MobKey.BWDRUIDS, 256,null, 1, 256000));
+            dataModel.put(MobKey.BWANGLERFISH, config.get(dataModel.getName(), MobKey.BWANGLERFISH, 256,null, 1, 256000));
+            dataModel.put(MobKey.BWCHIROMAW, config.get(dataModel.getName(), MobKey.BWCHIROMAW, 256,null, 1, 256000));	
+            dataModel.put(MobKey.BWSLUDGE, config.get(dataModel.getName(), MobKey.BWSLUDGE, 256,null, 1, 256000));	
+            dataModel.put(MobKey.BWSLUDGEON, config.get(dataModel.getName(), MobKey.BWSLUDGEON, 256,null, 1, 256000));	
+            dataModel.put(MobKey.BWEMBERLING, config.get(dataModel.getName(), MobKey.BWEMBERLING, 256,null, 1, 256000));	
+            dataModel.put(MobKey.BWSPIRITTREE, config.get(dataModel.getName(), MobKey.BWSPIRITTREE, 256,null, 1, 256000));	
+		}
+
         if(DeepConstants.MOD_TWILIGHT_LOADED) {
             dataModel.put(MobKey.TWILIGHTFOREST, config.get(dataModel.getName(), MobKey.TWILIGHTFOREST, 256,null, 1, 256000));
             dataModel.put(MobKey.TWILIGHTSWAMP, config.get(dataModel.getName(), MobKey.TWILIGHTSWAMP, 256,null, 1, 256000));
             dataModel.put(MobKey.TWILIGHTDARKWOOD, config.get(dataModel.getName(), MobKey.TWILIGHTDARKWOOD, 256,null, 1, 256000));
             dataModel.put(MobKey.TWILIGHTGLACIER, config.get(dataModel.getName(), MobKey.TWILIGHTGLACIER, 256,null, 1, 256000));
         }
+
         if(DeepConstants.MOD_TCON_LOADED) {
             dataModel.put(MobKey.TINKERSLIME, config.get(dataModel.getName(), MobKey.TINKERSLIME, 256,null, 1, 256000));
         }
+
         if(DeepConstants.MOD_MO_LOADED) {
             dataModel.put(MobKey.MO_ANDROID, config.get(dataModel.getName(), MobKey.MO_ANDROID, 256,null, 1, 256000));
         }
@@ -244,6 +262,17 @@ public class Config {
         if(DeepConstants.MOD_TCON_LOADED) {
             pristineOutputs.put(MobKey.TINKERSLIME, new Property(MobKey.TINKERSLIME, config.getStringList(MobKey.TINKERSLIME, pristineOutputs.getName(), DeepConstants.LOOT.TINKERSLIME, "Tinker construct slime"), Property.Type.STRING));
         }
+
+        if(DeepConstants.MOD_BW_LOADED) {
+			pristineOutputs.put(MobKey.BWBOULDER, new Property(MobKey.BWBOULDER, config.getStringList(MobKey.BWBOULDER, pristineOutputs.getName(), DeepConstants.LOOT.BWBOULDER, "Animated rolling Boulder"), Property.Type.STRING));
+			pristineOutputs.put(MobKey.BWDRUIDS, new Property(MobKey.BWDRUIDS, config.getStringList(MobKey.BWDRUIDS, pristineOutputs.getName(), DeepConstants.LOOT.BWDRUIDS, "Remains of the fallen Druids"), Property.Type.STRING));
+			pristineOutputs.put(MobKey.BWANGLERFISH, new Property(MobKey.BWANGLERFISH, config.getStringList(MobKey.BWANGLERFISH, pristineOutputs.getName(), DeepConstants.LOOT.BWANGLERFISH, "Underwater Creatures"), Property.Type.STRING));
+			pristineOutputs.put(MobKey.BWCHIROMAW, new Property(MobKey.BWCHIROMAW, config.getStringList(MobKey.BWCHIROMAW, pristineOutputs.getName(), DeepConstants.LOOT.BWCHIROMAW, "Corrupted Batlike Creatures"), Property.Type.STRING));
+			pristineOutputs.put(MobKey.BWSLUDGE, new Property(MobKey.BWSLUDGE, config.getStringList(MobKey.BWSLUDGE, pristineOutputs.getName(), DeepConstants.LOOT.BWSLUDGE, "Animated Sludge"), Property.Type.STRING));
+			pristineOutputs.put(MobKey.BWSLUDGEON, new Property(MobKey.BWSLUDGEON, config.getStringList(MobKey.BWSLUDGEON, pristineOutputs.getName(), DeepConstants.LOOT.BWSLUDGEON, "Depths of the Mire"), Property.Type.STRING));
+			pristineOutputs.put(MobKey.BWEMBERLING, new Property(MobKey.BWEMBERLING, config.getStringList(MobKey.BWEMBERLING, pristineOutputs.getName(), DeepConstants.LOOT.BWEMBERLING, "Fiery Emberlings"), Property.Type.STRING));
+			pristineOutputs.put(MobKey.BWSPIRITTREE, new Property(MobKey.BWSPIRITTREE, config.getStringList(MobKey.BWSPIRITTREE, pristineOutputs.getName(), DeepConstants.LOOT.BWSPIRITTREE, "Living Spirit Tree"), Property.Type.STRING));
+		}
 
         if(DeepConstants.MOD_TWILIGHT_LOADED) {
             pristineOutputs.put(MobKey.TWILIGHTFOREST, new Property(MobKey.TWILIGHTFOREST, config.getStringList(MobKey.TWILIGHTFOREST, pristineOutputs.getName(), DeepConstants.LOOT.TWILIGHTFOREST, "Twilight Forest(Biome, not the whole mod)"), Property.Type.STRING));

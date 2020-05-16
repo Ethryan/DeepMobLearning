@@ -157,6 +157,54 @@ public class ItemPristineMatter extends ItemBase {
         }
     }
 
+    public static class BetweenlandsBoulder extends ItemPristineMatter {
+        public BetweenlandsBoulder() {
+            super("pristine_matter_betweenlands_boulder", MobKey.BWBOULDER);
+        }
+    }
+
+    public static class BetweenlandsDruids extends ItemPristineMatter {
+        public BetweenlandsDruids() {
+            super("pristine_matter_betweenlands_druids", MobKey.BWDRUIDS);
+        }
+    }
+
+    public static class BetweenlandsAnglerfish extends ItemPristineMatter {
+        public BetweenlandsAnglerfish() {
+            super("pristine_matter_betweenlands_anglerfish", MobKey.BWANGLERFISH);
+        }
+    }
+
+    public static class BetweenlandsChiromaw extends ItemPristineMatter {
+        public BetweenlandsChiromaw() {
+            super("pristine_matter_betweenlands_chiromaw", MobKey.BWCHIROMAW);
+        }
+    }
+
+    public static class BetweenlandsSludge extends ItemPristineMatter {
+        public BetweenlandsSludge() {
+            super("pristine_matter_betweenlands_sludge", MobKey.BWSLUDGE);
+        }
+    }
+
+    public static class BetweenlandsSludgeon extends ItemPristineMatter {
+        public BetweenlandsSludgeon() {
+            super("pristine_matter_betweenlands_sludgeon", MobKey.BWSLUDGEON);
+        }
+    }
+
+    public static class BetweenlandsEmberling extends ItemPristineMatter {
+        public BetweenlandsEmberling() {
+            super("pristine_matter_betweenlands_emberling", MobKey.BWEMBERLING);
+        }
+    }
+
+    public static class BetweenlandsSpiritTree extends ItemPristineMatter {
+        public BetweenlandsSpiritTree() {
+            super("pristine_matter_betweenlands_spirittree", MobKey.BWSPIRITTREE);
+        }
+    }
+
     public static class TinkerSlime extends ItemPristineMatter {
         public TinkerSlime() {
             super("pristine_matter_tinker_slime", MobKey.TINKERSLIME);

@@ -282,6 +282,94 @@ public class ItemDataModel extends ItemBase {
         }
     }
 
+    public static class BetweenlandsBoulder extends ItemDataModel {
+        public BetweenlandsBoulder() {
+            super("data_model_betweenlands_boulder", MobKey.BWBOULDER);
+        }
+
+        @SideOnly(Side.CLIENT)
+        public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+            super.addInformation(stack, worldIn, list, flagIn);
+        }
+    }
+
+    public static class BetweenlandsDruids extends ItemDataModel {
+        public BetweenlandsDruids() {
+            super("data_model_betweenlands_druids", MobKey.BWDRUIDS);
+        }
+
+        @SideOnly(Side.CLIENT)
+        public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+            super.addInformation(stack, worldIn, list, flagIn);
+        }
+    }
+
+    public static class BetweenlandsAnglerfish extends ItemDataModel {
+        public BetweenlandsAnglerfish() {
+            super("data_model_betweenlands_anglerfish", MobKey.BWANGLERFISH);
+        }
+
+        @SideOnly(Side.CLIENT)
+        public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+            super.addInformation(stack, worldIn, list, flagIn);
+        }
+    }
+
+    public static class BetweenlandsChiromaw extends ItemDataModel {
+        public BetweenlandsChiromaw() {
+            super("data_model_betweenlands_chiromaw", MobKey.BWCHIROMAW);
+        }
+
+        @SideOnly(Side.CLIENT)
+        public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+            super.addInformation(stack, worldIn, list, flagIn);
+        }
+    }
+
+    public static class BetweenlandsSludge extends ItemDataModel {
+        public BetweenlandsSludge() {
+            super("data_model_betweenlands_sludge", MobKey.BWSLUDGE);
+        }
+
+        @SideOnly(Side.CLIENT)
+        public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+            super.addInformation(stack, worldIn, list, flagIn);
+        }
+    }
+
+    public static class BetweenlandsSludgeon extends ItemDataModel {
+        public BetweenlandsSludgeon() {
+            super("data_model_betweenlands_sludgeon", MobKey.BWSLUDGEON);
+        }
+
+        @SideOnly(Side.CLIENT)
+        public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+            super.addInformation(stack, worldIn, list, flagIn);
+        }
+    }
+
+    public static class BetweenlandsEmberling extends ItemDataModel {
+        public BetweenlandsEmberling() {
+            super("data_model_betweenlands_emberling", MobKey.BWEMBERLING);
+        }
+
+        @SideOnly(Side.CLIENT)
+        public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+            super.addInformation(stack, worldIn, list, flagIn);
+        }
+    }
+
+    public static class BetweenlandsSpiritTree extends ItemDataModel {
+        public BetweenlandsSpiritTree() {
+            super("data_model_betweenlands_spirittree", MobKey.BWSPIRITTREE);
+        }
+
+        @SideOnly(Side.CLIENT)
+        public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> list, ITooltipFlag flagIn) {
+            super.addInformation(stack, worldIn, list, flagIn);
+        }
+    }
+
     public static class TinkerSlime extends ItemDataModel {
         public TinkerSlime() {
             super("data_model_tinker_slime", MobKey.TINKERSLIME);
