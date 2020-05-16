@@ -35,6 +35,7 @@ public class DeepConstants {
     public static final boolean MOD_TCON_LOADED = Loader.isModLoaded("tconstruct");
     public static final boolean MOD_PATCHOULI_LOADED = Loader.isModLoaded("patchouli");
     public static final boolean MOD_MO_LOADED = Loader.isModLoaded("matteroverdrive");
+	public static final boolean MOD_BW_LOADED = Loader.isModLoaded("thebetweenlands");
 
     // NBT references
     public static final String NBT_STRING_AFFIX_CONNECTION = DeepConstants.MODID + ":mob_type";
@@ -116,6 +117,65 @@ public class DeepConstants {
             "tconstruct:slime_sapling,4,0",
             "tconstruct:slime_sapling,4,1",
             "tconstruct:slime_sapling,4,2"
+        };
+
+		public static final String[] BWBOULDER = {
+			"thebetweenlands:betweenstone,16,0",
+			"thebetweenlands:slimy_bone_ore,8,0",
+			"thebetweenlands:sulfur_ore,4,0",
+			"thebetweenlands:syrmorite_ore,1,0",
+			"thebetweenlands:octine_ore,1,0",
+			"thebetweenlands:scabyst_ore,1,0",
+			"thebetweenlands:valonite_ore,1,0"
+        };
+
+		public static final String[] BWDRUIDS = {
+				"thebetweenlands:items_misc,16,14",
+				"thebetweenlands:items_misc,4,44"
+				"thebetweenlands:wight_heart,1,0",
+				"thebetweenlands:shimmer_stone,1,0",
+        };
+
+		public static final String[] BWANGLERFISH = {
+				"thebetweenlands:items_misc,8,21",
+				"thebetweenlands:angler_meat_raw,8,0",
+				"thebetweenlands:silt_crab_claw,6,0",
+				"thebetweenlands:items_misc,4,4"
+        };
+
+		public static final String[] BWCHIROMAW = {
+				"thebetweenlands:items_misc,8,14",
+				"thebetweenlands:chiromaw_wing,2,0"
+        };
+
+		public static final String[] BWSLUDGE = {
+				"thebetweenlands:items_misc,8,14",
+				"thebetweenlands:sludge_ball,4,0",
+				"thebetweenlands:items_misc,3,26",
+				"thebetweenlands:items_misc,1,24"
+        };
+
+		public static final String[] BWSLUDGEON = {
+				"thebetweenlands:items_misc,8,14",
+				"thebetweenlands:items_misc,6,3",
+				"thebetweenlands:swamp_reed_item,6,0",
+				"thebetweenlands:shambler_tongue,4,0",
+				"thebetweenlands:dentrothyst_shard_green",
+				"thebetweenlands:dentrothyst_shard_yellow,2,0",
+				"thebetweenlands:rune_door_key,1,0"
+        };
+
+		public static final String[] BWEMBERLING = {
+				"thebetweenlands:items_misc,8,14",
+				"thebetweenlands:items_misc,4,45"
+        };
+
+		public static final String[] BWSPIRITTREE = {
+				"thebetweenlands:log_spirit_tree,8,0",
+				"thebetweenlands:wisp,2,0",
+				"thebetweenlands:sap_spit,2,0",
+				"thebetweenlands:spirit_fruit,1,0",
+				"thebetweenlands:sapling_spirit_tree,1,0"
         };
 
         public static final String[] TWILIGHTFOREST = {
@@ -273,6 +333,55 @@ public class DeepConstants {
 
         public static final String[] TINKERSLIME = {
                 "tconstruct:blueslime"
+        };
+
+		public static final String[] BWBOULDER = {
+				"thebetweenlands:boulder_sprite"
+        };
+
+		public static final String[] BWDRUIDS = {
+				"thebetweenlands:swamp_hag",
+				"thebetweenlands:wight",
+				"thebetweenlands:dark_druid",
+				"thebetweenlands:peat_mummy",
+				"thebetweenlands:ash_sprite"
+        };
+
+		public static final String[] BWANGLERFISH = {
+				"thebetweenlands:angler",
+				"thebetweenlands:silt_crab",
+				"thebetweenlands:blind_cave_fish",
+				"thebetweenlands:lurker"
+        };
+
+		public static final String[] BWCHIROMAW = {
+				"thebetweenlands:chiromaw",
+				"thebetweenlands:chiromaw_matriarch"
+        };
+
+		public static final String[] BWSLUDGE = {
+				"thebetweenlands:sludge",
+				"thebetweenlands:smoll_sludge",
+				"thebetweenlands:small_sludge_worm",
+				"thebetweenlands:large_sludge_worm",
+				"thebetweenlands:tar_beast"
+        };
+
+		public static final String[] BWSLUDGEON = {
+				"thebetweenlands:barrishee",
+				"thebetweenlands:crypt_crawler",
+				"thebetweenlands:living_root",
+				"thebetweenlands:shambler"
+        };
+
+		public static final String[] BWEMBERLING = {
+				"thebetweenlands:emberling",
+				"thebetweenlands:emberling_shaman"
+        };
+
+		public static final String[] BWSPIRITTREE = {
+				"thebetweenlands:spirit_tree_face_small",
+				"thebetweenlands:spirit_tree_face_large"
         };
 
         public static final String[] TWILIGHTFOREST = {
