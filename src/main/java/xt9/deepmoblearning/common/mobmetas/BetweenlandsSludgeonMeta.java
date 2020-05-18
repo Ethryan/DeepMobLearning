@@ -11,8 +11,8 @@ public class BetweenlandsSludgeonMeta extends MobMetaData {
         super(key, name, pluralName, numberOfHearts, interfaceScale, interfaceOffsetX, interfaceOffsetY, livingMatter, pristineMatter, mobTrivia);
     }
 
-    public EntityBarrisheeSprite getEntity(World world) {
-        return new EntityBarrisheeSprite(world);
+    public EntityBarrishee getEntity(World world) {
+        return new EntityBarrishee(world);
     }
 
     @Override

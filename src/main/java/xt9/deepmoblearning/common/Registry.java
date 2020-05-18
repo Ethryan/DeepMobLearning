@@ -76,6 +76,14 @@ public class Registry {
     private static ItemDataModel.TwilightSwamp dataModelTwilightSwamp = new ItemDataModel.TwilightSwamp();
     private static ItemDataModel.TwilightDarkwood dataModelTwilightDarkwood = new ItemDataModel.TwilightDarkwood();
     private static ItemDataModel.TwilightGlacier dataModelTwilightGlacier = new ItemDataModel.TwilightGlacier();
+    private static ItemDataModel.BetweenlandsBoulder dataModelBetweenlandsBoulder = new ItemDataModel.BetweenlandsBoulder();
+    private static ItemDataModel.BetweenlandsDruids dataModelBetweenlandsDruids = new ItemDataModel.BetweenlandsDruids();
+    private static ItemDataModel.BetweenlandsAnglerfish dataModelBetweenlandsAnglerfish = new ItemDataModel.BetweenlandsAnglerfish();
+    private static ItemDataModel.BetweenlandsChiromaw dataModelBetweenlandsChiromaw = new ItemDataModel.BetweenlandsChiromaw();
+    private static ItemDataModel.BetweenlandsSludge dataModelBetweenlandsSludge = new ItemDataModel.BetweenlandsSludge();
+	private static ItemDataModel.BetweenlandsSludgeon dataModelBetweenlandsSludgeon = new ItemDataModel.BetweenlandsSludgeon();
+    private static ItemDataModel.BetweenlandsEmberling dataModelBetweenlandsEmberling = new ItemDataModel.BetweenlandsEmberling();
+	private static ItemDataModel.BetweenlandsSpiritTree dataModelBetweenlandsSpiritTree = new ItemDataModel.BetweenlandsSpiritTree();
     private static ItemDataModel.TinkerSlime dataModelTinkerSlime = new ItemDataModel.TinkerSlime();
     private static ItemDataModel.MOAndroid dataModelMOAndroid = new ItemDataModel.MOAndroid();
 
@@ -83,7 +91,9 @@ public class Registry {
     public static ItemLivingMatter.Overworldian livingMatterOverworldian = new ItemLivingMatter.Overworldian();
     public static ItemLivingMatter.Hellish livingMatterHellish = new ItemLivingMatter.Hellish();
     public static ItemLivingMatter.Extraterrestrial livingMatterExtraterrestrial = new ItemLivingMatter.Extraterrestrial();
+    public static ItemLivingMatter.Spatial livingMatterSpatial = new ItemLivingMatter.Spatial();
     public static ItemLivingMatter.Twilight livingMatterTwilight = new ItemLivingMatter.Twilight();
+    public static ItemLivingMatter.Between livingMatterBetween = new ItemLivingMatter.Between();
 
     // Pristine matter
     public static ItemPristineMatter.Zombie pristineMatterZombie = new ItemPristineMatter.Zombie();
@@ -107,6 +117,14 @@ public class Registry {
     public static ItemPristineMatter.TwilightSwamp pristineMatterTwilightSwamp = new ItemPristineMatter.TwilightSwamp();
     public static ItemPristineMatter.TwilightDarkwood pristineMatterTwilightDarkwood = new ItemPristineMatter.TwilightDarkwood();
     public static ItemPristineMatter.TwilightGlacier pristineMatterTwilightGlacier = new ItemPristineMatter.TwilightGlacier();
+    public static ItemPristineMatter.BetweenlandsBoulder pristineMatterBetweenlandsBoulder = new ItemPristineMatter.BetweenlandsBoulder();
+    public static ItemPristineMatter.BetweenlandsDruids pristineMatterBetweenlandsDruids = new ItemPristineMatter.BetweenlandsDruids();
+    public static ItemPristineMatter.BetweenlandsAnglerfish pristineMatterBetweenlandsAnglerfish = new ItemPristineMatter.BetweenlandsAnglerfish();
+    public static ItemPristineMatter.BetweenlandsChiromaw pristineMatterBetweenlandsChiromaw = new ItemPristineMatter.BetweenlandsChiromaw();
+    public static ItemPristineMatter.BetweenlandsSludge pristineMatterBetweenlandsSludge = new ItemPristineMatter.BetweenlandsSludge();
+	public static ItemPristineMatter.BetweenlandsSludgeon pristineMatterBetweenlandsSludgeon = new ItemPristineMatter.BetweenlandsSludgeon();
+    public static ItemPristineMatter.BetweenlandsEmberling pristineMatterBetweenlandsEmberling = new ItemPristineMatter.BetweenlandsEmberling();
+	public static ItemPristineMatter.BetweenlandsSpiritTree pristineMatterBetweenlandsSpiritTree = new ItemPristineMatter.BetweenlandsSpiritTree();
     public static ItemPristineMatter.TinkerSlime pristineMatterTinkerSlime = new ItemPristineMatter.TinkerSlime();
     public static ItemPristineMatter.MOAndroid pristineMatterMOAndroid = new ItemPristineMatter.MOAndroid();
 
@@ -134,9 +152,14 @@ public class Registry {
         }
 
         if(DeepConstants.MOD_BW_LOADED) {
-			dataModels.add();
-			dataModels.add();
-            dataModels.add();
+			dataModels.add(dataModelBetweenlandsBoulder);
+			dataModels.add(dataModelBetweenlandsDruids);
+            dataModels.add(dataModelBetweenlandsAnglerfish);
+			dataModels.add(dataModelBetweenlandsChiromaw);
+			dataModels.add(dataModelBetweenlandsSludge);
+			dataModels.add(dataModelBetweenlandsSludgeon);
+			dataModels.add(dataModelBetweenlandsEmberling);
+			dataModels.add(dataModelBetweenlandsSpiritTree);
         }
 
         if(DeepConstants.MOD_TWILIGHT_LOADED) {
@@ -160,9 +183,14 @@ public class Registry {
         livingMatter.add(livingMatterOverworldian);
         livingMatter.add(livingMatterHellish);
         livingMatter.add(livingMatterExtraterrestrial);
+		livingMatter.add(livingMatterSpatial);
 
         if(DeepConstants.MOD_TWILIGHT_LOADED) {
             livingMatter.add(livingMatterTwilight);
+        }
+
+        if(DeepConstants.MOD_BW_LOADED) {
+            livingMatter.add(livingMatterBetween);
         }
     }
 
@@ -196,6 +224,18 @@ public class Registry {
             pristineMatter.add(pristineMatterTwilightDarkwood);
             pristineMatter.add(pristineMatterTwilightGlacier);
         }
+
+        if(DeepConstants.MOD_BW_LOADED) {
+            pristineMatter.add(pristineMatterBetweenlandsBoulder);
+			pristineMatter.add(pristineMatterBetweenlandsDruids);
+			pristineMatter.add(pristineMatterBetweenlandsAnglerfish);
+			pristineMatter.add(pristineMatterBetweenlandsChiromaw);
+			pristineMatter.add(pristineMatterBetweenlandsSludge);
+			pristineMatter.add(pristineMatterBetweenlandsSludgeon);
+			pristineMatter.add(pristineMatterBetweenlandsEmberling);
+			pristineMatter.add(pristineMatterBetweenlandsSpiritTree);
+        }
+
         if(DeepConstants.MOD_MO_LOADED) {
             pristineMatter.add(pristineMatterMOAndroid);
         }

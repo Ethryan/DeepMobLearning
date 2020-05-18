@@ -11,7 +11,7 @@ public class BetweenlandsEmberlingMeta extends MobMetaData {
         super(key, name, pluralName, numberOfHearts, interfaceScale, interfaceOffsetX, interfaceOffsetY, livingMatter, pristineMatter, mobTrivia);
     }
 
-    public EntityEmberlingSprite getEntity(World world) {
-        return new EntityEmberlingSprite(world);
+    public EntityEmberling getEntity(World world) {
+        return new EntityEmberling(world);
     }
 }

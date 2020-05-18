@@ -131,9 +131,9 @@ public class DeepConstants {
 
 		public static final String[] BWDRUIDS = {
 				"thebetweenlands:items_misc,16,14",
-				"thebetweenlands:items_misc,4,44"
+				"thebetweenlands:items_misc,4,44",
 				"thebetweenlands:wight_heart,1,0",
-				"thebetweenlands:shimmer_stone,1,0",
+				"thebetweenlands:shimmer_stone,1,0"
         };
 
 		public static final String[] BWANGLERFISH = {

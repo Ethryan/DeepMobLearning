@@ -11,7 +11,7 @@ public class BetweenlandsChiromawMeta extends MobMetaData {
         super(key, name, pluralName, numberOfHearts, interfaceScale, interfaceOffsetX, interfaceOffsetY, livingMatter, pristineMatter, mobTrivia);
     }
 
-    public EntityChiromawSprite getEntity(World world) {
-        return new EntityChiromawSprite(world);
+    public EntityChiromaw getEntity(World world) {
+        return new EntityChiromaw(world);
     }
 }

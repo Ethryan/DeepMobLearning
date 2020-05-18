@@ -11,8 +11,8 @@ public class BetweenlandsAnglerfishMeta extends MobMetaData {
         super(key, name, pluralName, numberOfHearts, interfaceScale, interfaceOffsetX, interfaceOffsetY, livingMatter, pristineMatter, mobTrivia);
     }
 
-    public EntityAnglerSprite getEntity(World world) {
-        return new EntityAnglerSprite(world);
+    public EntityAngler getEntity(World world) {
+        return new EntityAngler(world);
     }
 
     @Override

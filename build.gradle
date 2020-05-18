@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 def mcVersion = "1.12.2"
 def modMajor = "2"
 def modMinor = "6"
-def modPatch = "1"
+def modPatch = "2"
 
 version = "${mcVersion}-${modMajor}.${modMinor}.${modPatch}"
 group = "xt9.deepmoblearning" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -86,6 +86,7 @@ dependencies {
     compile "vazkii.patchouli:Patchouli:1.0-18.91"
     compile "info.amerifrance.guideapi:Guide-API:1.12-2.1.8-63"
 
+	compile files("jar/TheBetweenlands-3.6.0-universal.jar")
     compile "blood-magic:BloodMagic-1.12.2:2.2.12:97"
     compile "deep-mob-learning-blood-magic-addon:deepmoblearningbm-1.12.2:0.9.1:universal"
 

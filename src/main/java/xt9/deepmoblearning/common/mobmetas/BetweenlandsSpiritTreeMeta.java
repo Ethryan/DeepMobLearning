@@ -11,8 +11,8 @@ public class BetweenlandsSpiritTreeMeta extends MobMetaData {
         super(key, name, pluralName, numberOfHearts, interfaceScale, interfaceOffsetX, interfaceOffsetY, livingMatter, pristineMatter, mobTrivia);
     }
 
-    public EntitySpiritTreeFaceLargeSprite getEntity(World world) {
-        return new EntitySpiritTreeFaceLargeSprite(world);
+    public EntitySpiritTreeFaceLarge getEntity(World world) {
+        return new EntitySpiritTreeFaceLarge(world);
     }
 
     @Override

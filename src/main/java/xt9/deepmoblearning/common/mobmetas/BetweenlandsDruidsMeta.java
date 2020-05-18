@@ -11,8 +11,8 @@ public class BetweenlandsDruidsMeta extends MobMetaData {
         super(key, name, pluralName, numberOfHearts, interfaceScale, interfaceOffsetX, interfaceOffsetY, livingMatter, pristineMatter, mobTrivia);
     }
 
-    public EntityDarkDruidSprite getEntity(World world) {
-        return new EntityDarkDruidSprite(world);
+    public EntityDarkDruid getEntity(World world) {
+        return new EntityDarkDruid(world);
     }
 
     @Override

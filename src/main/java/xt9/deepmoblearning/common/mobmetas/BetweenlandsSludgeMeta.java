@@ -11,8 +11,8 @@ public class BetweenlandsSludgeMeta extends MobMetaData {
         super(key, name, pluralName, numberOfHearts, interfaceScale, interfaceOffsetX, interfaceOffsetY, livingMatter, pristineMatter, mobTrivia);
     }
 
-    public EntitySludgeSprite getEntity(World world) {
-        return new EntitySludgeSprite(world);
+    public EntitySludge getEntity(World world) {
+        return new EntitySludge(world);
     }
 
     @Override
